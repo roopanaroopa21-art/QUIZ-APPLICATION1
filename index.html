@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Quiz Application</h1>
+        <p>Test your knowledge</p>
+    </header>
+
+    <main>
+
+        <section class="quiz-container">
+
+            <!-- Quiz Header -->
+            <div class="quiz-top">
+
+                <div>
+                    <span>Question</span>
+                    <strong id="questionNumber">1 / 10</strong>
+                </div>
+
+                <div class="timer-box">
+                    Time:
+                    <span id="timer">60</span>s
+                </div>
+
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <!-- Quiz Form -->
+            <form id="quizForm">
+
+                <div class="question-section">
+
+                    <h2 id="question">
+                        Question will appear here
+                    </h2>
+
+                    <div id="options">
+
+                        <!-- Options will be created using JavaScript -->
+
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons">
+
+                    <button type="button" id="previousBtn">
+                        Previous
+                    </button>
+
+                    <button type="button" id="nextBtn">
+                        Next
+                    </button>
+
+                    <button type="button" id="submitBtn">
+                        Submit Quiz
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- Result Section -->
+
+        <section id="resultSection" class="result-section">
+
+            <h2>Quiz Completed!</h2>
+
+            <p>Your Score</p>
+
+            <div class="score" id="score">
+                0 / 10
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <button id="restartBtn">
+                Restart Quiz
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
